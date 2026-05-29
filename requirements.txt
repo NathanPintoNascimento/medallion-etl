@@ -1,0 +1,38 @@
+# ══════════════════════════════════════════════════════════════
+# Pipeline ETL Medallion — Dependencies
+# Python >= 3.11
+# ══════════════════════════════════════════════════════════════
+
+# ── Spark + Delta Lake ─────────────────────────────────────────
+pyspark==3.5.0
+delta-spark==3.1.0
+
+# ── Data Processing ────────────────────────────────────────────
+pandas==2.1.4
+pyarrow==14.0.2
+numpy==1.26.3
+
+# ── Database ───────────────────────────────────────────────────
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.25
+
+# ── HTTP / Download ────────────────────────────────────────────
+requests==2.31.0
+urllib3==2.1.0
+
+# ── Airflow (instalado via imagem Docker) ─────────────────────
+# apache-airflow==2.8.1  ← já incluso na imagem apache/airflow
+
+# ── Testes ────────────────────────────────────────────────────
+pytest==7.4.4
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# ── Dev / Qualidade ────────────────────────────────────────────
+black==23.12.1
+ruff==0.1.11
+mypy==1.8.0
+
+# ── Jupyter (opcional, para notebooks) ────────────────────────
+notebook==7.0.7
+ipykernel==6.28.0
